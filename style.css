@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.home
+{
+    width: 100%;
+    height: 100vh;
+    border: solid;
+    background-image: url('Assert/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+header
+{
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+height: 70px;
+padding: 0 5%;
+width: 100%;
+transition: background-color 0.3s ease;
+z-index: 100;
+position: fixed;
+}
+header.scrolled {
+    background-color: rgba(26, 25, 25, 0.816); /*you can Change to any color on scroll */
+      
+}
+header.scrolled nav a {
+    color: white; /* Font color on scrolling */
+}
+header h1{
+    font-size: 45px;
+    font-weight: 600 ;
+   color: greenyellow;
+   /* font-family: "Raleway", sans-serif; */
+   font-family: "Dancing Script", cursive;
+   
+}
+header nav 
+{
+    /* border: solid; */
+    display: flex;
+    gap: 20px;
+
+}
+header nav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 99px;
+    transition: 0.5s;
+    color:white;
+    
+
+}
+header nav a.avt{
+background-color: greenyellow;
+color: black;
+}
+header nav a:hover{
+    background-color:greenyellow;  
+    color: black;
+}
+header nav:hover > a:not(:hover){
+background: none;
+color: white;
+}
+.title{
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Dancing Script", cursive;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-size: 140px;
+    font-weight: 800;
+    transform: translate(-50%,-50%);
+    color:greenyellow;
+
+}
+.moto{
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%,-50%);
+    color:white; 
+}
+
+/* about */
+.About
+{  width: 100%;
+    height: 100vh;
+    border: solid;
+}
+
+
+/* mobile device */
+@media (max-width: 850px)
+{
+    body{
+        border: 2px solid blue  ;
+    }   
+    header h1{
+        font-size: 30px;
+        font-weight: 400 ;
+       color: greenyellow;
+       /* font-family: "Raleway", sans-serif; */
+       font-family: "Dancing Script", cursive;
+       
+    }
+}
+@media (max-width: 768px)
+{
+    body{
+        border: 2px solid red;
+    }
+    header h1{
+        font-size: 30px;
+        font-weight: 400 ;
+       color: greenyellow;
+       /* font-family: "Raleway", sans-serif; */
+       font-family: "Dancing Script", cursive;
+       
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 4px 2px;
+        border-radius: 99px;
+        transition: 0.5s;
+        color:white;
+        
+    
+    }
+    .title{
+        /* font-family: "Raleway", sans-serif; */
+        font-family: "Dancing Script", cursive;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        font-size: 60px;
+        font-weight: 900;
+        transform: translate(-50%,-50%);
+        color:greenyellow;
+    
+    }
+    .moto{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 25px;
+        font-weight: 400;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transform: translate(-50%,-50%);
+        color:white; 
+    }
+}
