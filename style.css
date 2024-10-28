@@ -131,8 +131,8 @@ color: white;
         border: 2px solid red;
     }
     header h1{
-        font-size: 30px;
-        font-weight: 400 ;
+        font-size: 25px;
+        font-weight: 400;
        color: greenyellow;
        /* font-family: "Raleway", sans-serif; */
        font-family: "Dancing Script", cursive;
@@ -155,7 +155,7 @@ color: white;
         position: absolute;
         top: 50%;
         left: 45%;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 900;
         transform: translate(-50%,-50%);
         color:greenyellow;
@@ -165,7 +165,7 @@ color: white;
         position: absolute;
         top: 60%;
         left: 50%;
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         transform: translate(-50%,-50%);
