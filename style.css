@@ -204,50 +204,48 @@ header .hamburger {
     }
 }
 @media (max-width: 400px) {
-        body {
-            border: 2px solid blue; /* Optional: Helps to visually confirm small-screen mode */
-        }
-    
-        header h1 {
-            font-size: xx-large;
-            font-weight: 400;
-        }
-    
-        header nav a {
-            font-size: 13px;
-            font-weight: 500;
-            padding: 4px;
-        }
-    
-        header nav {
-            width: 60%; /* Adjusts width of the nav menu to be more compact */
-            top: 45px;
-            padding: 8px;
-        }
-    
-        .title {
-            top: 50%;
-            left: 50%;
-            font-size: 60px;
-            font-weight: 800;
-            white-space: nowrap;
-        }
-    
-        .tag {
-            top: 60%;
-            left: 50%;
-            font-size: 18px;
-            font-weight: 400;
-            white-space: nowrap;
-        }
-    
-        header .hamburger {
-            font-size: 25px;
-        }
-    
-        /*  About section */
-        .About {
-            height: 100vh;
-          
-        }
+    body {
+        border: 2px solid green; /* Optional: Helps to visually confirm small-screen mode */
     }
+
+    header h1 {
+        font-size: xx-large;
+        font-weight: 400;
+    }
+
+    header nav a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 4px;
+    }
+
+    header nav {
+        width: 60%; /* Adjusts width of the nav menu to be more compact */
+        top: 45px;
+        padding: 8px;
+    }
+
+    .title {
+        top: 50%;
+        left: 50%;
+        font-size: 60px;
+        font-weight: 800;
+        white-space: nowrap;
+    }
+
+    .tag {
+        top: 60%;
+        left: 50%;
+        font-size: 18px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    header .hamburger {
+        font-size: 25px;
+    }
+    .About {
+        height: 100vh;
+      
+    }
+}
