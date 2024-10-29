@@ -39,13 +39,12 @@ header.scrolled {
       
 }
 header.scrolled nav a {
-    color: white; /* Font color on scrolling */
+    color: white; 
 }
 header h1{
-    font-size: 45px;
+    font-size: xxx-large;
     font-weight: 600 ;
    color: greenyellow;
-   /* font-family: "Raleway", sans-serif; */
    font-family: "Dancing Script", cursive;
    
 }
@@ -54,18 +53,15 @@ header nav
     /* border: solid; */
     display: flex;
     gap: 20px;
-
 }
 header nav a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     padding: 6px 10px;
     border-radius: 99px;
     transition: 0.5s;
     color:white;
-    
-
 }
 header nav a.avt{
 background-color: greenyellow;
@@ -79,27 +75,34 @@ header nav:hover > a:not(:hover){
 background: none;
 color: white;
 }
+header .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
 .title{
-    /* font-family: "Raleway", sans-serif; */
     font-family: "Dancing Script", cursive;
     position: absolute;
     top: 55%;
-    left: 40%;
+    left: 50%;
     font-size: 140px;
     font-weight: 800;
     transform: translate(-50%,-50%);
     color:greenyellow;
 
 }
-.moto{
+.tag{
     position: absolute;
+    /* border: solid; */
     top: 70%;
-    left: 47%;
+    left: 50%;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: translate(-50%,-50%);
     color:white; 
+    white-space: nowrap;
 }
 
 /* about */
@@ -111,19 +114,35 @@ color: white;
 
 
 /* mobile device */
-@media (max-width: 850px)
+@media (max-width: 1050px)
 {
     body{
         border: 2px solid blue  ;
     }   
     header h1{
-        font-size: 30px;
-        font-weight: 400 ;
-       color: greenyellow;
-       /* font-family: "Raleway", sans-serif; */
-       font-family: "Dancing Script", cursive;
-       
+        font-size:xxx-large;
+         /* bigger; */
+          }
+    header nav a{
+        font-size: 20px;
     }
+    .title{
+        
+        top: 50%;
+        left: 45%;
+        font-size: 90px;
+        
+    
+    }
+    .tag{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 30px;
+        font-weight: 400;
+        
+    }
+    
 }
 @media (max-width: 768px)
 {
@@ -131,44 +150,59 @@ color: white;
         border: 2px solid red;
     }
     header h1{
-        font-size: 25px;
-        font-weight: 400;
-       color: greenyellow;
-       /* font-family: "Raleway", sans-serif; */
-       font-family: "Dancing Script", cursive;
+        font-size: xxx-large;
+        font-weight: 400 ;
+      
        
     }
     header nav a{
         text-decoration: none;
         font-size: 15px;
         font-weight: 500;
-        padding: 4px 2px;
-        border-radius: 99px;
-        transition: 0.5s;
-        color:white;
-        
     
     }
+    /* hemburger */
+    header nav {
+        display: none;
+        flex-direction: column;
+        /* background-color: #333; */
+        position: absolute;
+        top: 45px;
+     width: 30%;
+        right: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav.show {
+        display: flex;
+    }
+
+    header nav a {
+        padding: 5px;
+        text-align: center;
+        border-bottom: 0.5px solid #444;
+    }
+    /*  */
     .title{
-        /* font-family: "Raleway", sans-serif; */
-        font-family: "Dancing Script", cursive;
-        position: absolute;
+   
         top: 50%;
-        left: 45%;
-        font-size: 40px;
+        left: 50%;
+        font-size: 90px;
         font-weight: 900;
-        transform: translate(-50%,-50%);
-        color:greenyellow;
+        white-space: nowrap;
+    
+       
     
     }
-    .moto{
-        position: absolute;
+    .tag{
         top: 60%;
         left: 50%;
-        font-size: 24px;
-        font-weight: 400;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        transform: translate(-50%,-50%);
-        color:white; 
+        font-size: 25px;
+       
     }
 }
