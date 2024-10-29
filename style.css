@@ -205,7 +205,7 @@ header .hamburger {
 }
 @media (max-width: 400px) {
         body {
-            border: 2px solid green; /* Optional: Helps to visually confirm small-screen mode */
+            border: 2px solid blue; /* Optional: Helps to visually confirm small-screen mode */
         }
     
         header h1 {
