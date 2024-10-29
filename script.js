@@ -6,3 +6,8 @@ window.addEventListener("scroll", function() {
         header.classList.remove("scrolled");
     }
 });
+
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
+}
