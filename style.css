@@ -9,19 +9,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
+
 .home
 {
     width: 100%;
     height: 100vh;
-/*     border: solid; */
-     position: relative;
+    border: solid;
+    position: relative;
     background-image: url('Assert/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-     overflow: hidden;
-    
-    
+    overflow: hidden;
 }
 header
 {
@@ -38,10 +38,14 @@ position: fixed;
 }
 header.scrolled {
     background-color: rgba(26, 25, 25, 0.816); /*you can Change to any color on scroll */
-      
 }
 header.scrolled nav a {
     color: white; 
+}
+header scrolled nav a.avt
+{
+    background-color: greenyellow;
+     
 }
 header h1{
     font-size: xxx-large;
@@ -64,6 +68,7 @@ header nav a{
     border-radius: 99px;
     transition: 0.5s;
     color:white;
+
 }
 header nav a.avt{
 background-color: greenyellow;
@@ -72,10 +77,12 @@ color: black;
 header nav a:hover{
     background-color:greenyellow;  
     color: black;
+    box-shadow: 0 0 1rem greenyellow;
 }
 header nav:hover > a:not(:hover){
 background: none;
 color: white;
+
 }
 header .hamburger {
     display: none;
@@ -91,7 +98,8 @@ header .hamburger {
     font-size: 140px;
     font-weight: 800;
     transform: translate(-50%,-50%);
-    color:greenyellow;
+    color:white;
+    transition: margin-top 0.1s ease-out; 
 
 }
 .tag{
@@ -107,12 +115,88 @@ header .hamburger {
     white-space: nowrap;
 }
 
-/* about */
+/* about --------------------------------------*/
 .About
 {  width: 100%;
     height: 100vh;
     border: solid;
+    display: flex;
 }
+.p1
+{
+    width: 50%;
+    height: 100vh;
+    /* border: red solid; */
+  
+}
+.p1 img{
+    width: 64%;
+    height: 45%;
+    margin-left: 30%;
+    margin-top: 25%;
+
+}
+.p2
+{
+    width: 50%;
+    height: 100vh;
+    /* border: yellow solid;  */
+  
+}
+.p2 h1{
+    font-size: 40px;
+   padding-left: 5%;
+   padding-top: 20%;
+   white-space: nowrap;
+   font-weight: 500;
+
+}
+.underline
+{
+    border-bottom: 5px solid green; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+}
+ .p2 p
+{ 
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-right: 5%;
+}
+
+.p2 h2{
+    font-size: 25px;
+   padding-left: 5%;
+   padding-top: 2%;
+   font-weight: 500;
+}
+.ab{
+    background-image: url('Assert/ab.jpg');
+    margin-bottom: 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+.ab h1{
+    border-bottom: 3px solid green; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+    color: black;
+    margin-left: 45%;
+    margin-top: 7%;
+    font-size: 40px;
+    font-weight: 500;
+}
+.ab p{
+    margin-left: 35%; 
+    margin-top: 1%;
+    font-size: 30px;
+    white-space: nowrap;
+    font-weight: 500;
+    
+
+}
+
 
 
 /* mobile device */
@@ -137,14 +221,13 @@ header .hamburger {
     
     }
     .tag{
-        position: absolute;
         top: 60%;
         left: 50%;
         font-size: 30px;
         font-weight: 400;
         
     }
-    
+    /* about --------------------------------------*/
 }
 @media (max-width: 768px)
 {
@@ -185,6 +268,9 @@ header .hamburger {
     }
 
     header nav a {
+        /* last update */
+        margin-top: 18px; 
+        /* add in github */
         padding: 5px;
         text-align: center;
         border-bottom: 0.5px solid #444;
@@ -204,6 +290,79 @@ header .hamburger {
         font-size: 25px;
        
     }
+    /* about --------------------------------------*/
+    .About
+{  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+}
+.p1 img{
+    width: 85%;
+    height: 75%;
+    margin-left: 8%;
+    margin-top: 20%;
+
+}
+.p1
+{
+    width: 100%;
+    height: auto;
+    /* border: red solid; */
+  
+}
+
+.p2
+{
+    width: 100%;
+    height: auto;
+    /* border: yellow solid;  */
+  
+}
+.p2 h1{
+   
+   padding-left: 9%;
+   padding-top: 2%;
+   
+   font-weight: 500;
+
+}
+.underline
+{
+    border-bottom: 5px solid green; /* Adds a green underline */
+    display: inline-block; /* Keeps underline only under the text */
+    padding-bottom: 3px; 
+}
+ .p2 p
+{ 
+    padding-left: 9%;
+    padding-top: 2%;
+    margin-right: 5%;
+}
+
+.p2 h2{
+    font-size: 25px;
+   padding-left: 9%;
+   padding-top: 2%;
+   font-weight: 500;
+}
+.ab{ 
+    height: 200px;
+}
+.ab h1{
+   font-size: 35px;
+    font-weight: 500;
+}
+.ab p{
+    margin-left: 20%; 
+    margin-top: 2%;
+    font-size: 23px;
+    font-weight: 500;
+    
+
+}
+
 }
 @media (max-width: 400px) {
     body {
@@ -230,24 +389,67 @@ header .hamburger {
     .title {
         top: 50%;
         left: 50%;
-        font-size: 70px;
+        font-size: 90px;
         font-weight: 800;
         white-space: nowrap;
+       
     }
 
     .tag {
-        top: 60%;
+        top: 61%;
         left: 50%;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 600;
         white-space: nowrap;
     }
 
     header .hamburger {
         font-size: 25px;
     }
-    .About {
-        height: 100vh;
-      
-    }
+    /* about --------------------------------------*/
+    .About
+{  
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+}
+.p1 img{
+    width: 85%;
+    height: 75%;
+    margin-left: 8%;
+    margin-top: 20%;
+
+}
+.p1
+{
+    width: 100%;
+    height: auto;
+    /* border: red solid; */
+  
+}
+
+.p2
+{
+    width: 100%;
+    height: auto;
+    /* border: yellow solid;  */
+  
+}
+.p2 h1{  
+  font-size: 30px;
+}
+
+
+
+.ab h1{
+   font-size: 35px;
+    
+    margin-left: 35%; 
+}
+.ab p{
+    margin-left: 2.5%; 
+    font-size: 22px;
+}
+
 }
