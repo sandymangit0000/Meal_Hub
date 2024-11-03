@@ -31,3 +31,22 @@ const slow_up=value*0.2;
         tagElement.style.display = "block"; // Show the tag when at the top
     }
 })
+
+// photo
+function filterImages(category) {
+    // Get all image containers
+    const images = document.querySelectorAll('.image-container');
+    
+    images.forEach(image => {
+        // Hide all images by default
+        image.classList.add('hidden');
+
+        // If the 'all' category is selected, show all images
+        if (category === 'all') {
+            image.classList.remove('hidden');
+        } else if (image.classList.contains(category)) {
+            // Show images that match the selected category
+            image.classList.remove('hidden');
+        }
+    });
+}
