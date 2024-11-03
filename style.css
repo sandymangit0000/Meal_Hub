@@ -648,7 +648,7 @@ header .hamburger {
 }
 .ab p{
     margin-left: 3%; 
-    font-size: 20px;
+    font-size: 18px;
 }
 /* menu card */
 .item1,.item2{
@@ -659,12 +659,12 @@ header .hamburger {
 }
 .items h1
 {
-    margin-left: 13%;
+    margin-left: 11%;
 }
 .items h4
 {
     display: block;
-    margin-left: 13%;
+    margin-left: 11%;
 }
 .price
 {
@@ -674,7 +674,7 @@ header .hamburger {
 /* galary section */
 .galary h1
 {
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: 25%;
 }
 .image-button
