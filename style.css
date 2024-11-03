@@ -101,7 +101,7 @@ header .hamburger {
     font-size: 140px;
     font-weight: 800;
     transform: translate(-50%,-50%);
-    color:white;
+    color:greenyellow;
     transition: margin-top 0.1s ease-out; 
 
 }
