@@ -41,6 +41,7 @@ header.scrolled {
 }
 header.scrolled nav a {
     color: white; 
+    background-color:    rgba(0, 0, 0, 0.5);
 }
 header scrolled nav a.avt
 {
@@ -82,6 +83,7 @@ header nav a:hover{
 header nav:hover > a:not(:hover){
 background: none;
 color: white;
+background-color: rgba(0, 0, 0, 0.5);
 
 }
 header .hamburger {
@@ -89,6 +91,7 @@ header .hamburger {
     font-size: 30px;
     cursor: pointer;
     color: white;
+    
 }
 .title{
     font-family: "Dancing Script", cursive;
@@ -130,9 +133,10 @@ header .hamburger {
   
 }
 .p1 img{
-    width: 64%;
-    height: 45%;
-    margin-left: 30%;
+    width: 65%;
+    height: 48%;
+    margin-left: 28%;
+    border-radius: 10%;
     margin-top: 25%;
 
 }
@@ -144,8 +148,8 @@ header .hamburger {
   
 }
 .p2 h1{
-    font-size: 40px;
-   padding-left: 5%;
+   font-size: 40px;
+   padding-left: 3%;
    padding-top: 20%;
    white-space: nowrap;
    font-weight: 500;
@@ -159,45 +163,210 @@ header .hamburger {
 }
  .p2 p
 { 
-    padding-left: 5%;
+    padding-left: 3%;
     padding-top: 2%;
     margin-right: 5%;
+    font-size: 18px;
 }
 
 .p2 h2{
     font-size: 25px;
-   padding-left: 5%;
+   padding-left: 3%;
    padding-top: 2%;
    font-weight: 500;
 }
 .ab{
     background-image: url('Assert/ab.jpg');
-    margin-bottom: 50%;
     background-attachment: fixed;
     background-size: cover;
     height: 300px;
 }
 .ab h1{
-    border-bottom: 3px solid green; /* Adds a green underline */
+    border-bottom: 4px solid greenyellow; /* Adds a green underline */
     display: inline-block; /* Keeps underline only under the text */
     padding-bottom: 3px; 
-    color: black;
+    color:white;
     margin-left: 45%;
     margin-top: 7%;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+   
 }
 .ab p{
-    margin-left: 35%; 
+    margin-left: 32%; 
     margin-top: 1%;
-    font-size: 30px;
+    font-size: 35px;
     white-space: nowrap;
-    font-weight: 500;
-    
+    font-weight: 300;
+    color:black;
+   
 
+}
+/* menu list */
+.items{
+    width: 100%;
+    border: solid;
+    height: auto;
+}
+.item1
+{
+    display: flex;
+    width: 100%;
+    /* border: solid saddlebrown; */
+}
+.item1_1
+{
+    width: 50%;
+    /* border: solid red; */
 }
 
 
+.item1_2
+{
+    width: 50%;
+    /* border: solid rgb(0, 8, 255); */
+}
+.item2
+{
+    display: flex;
+    width: 100%;
+    /* border: solid saddlebrown; */
+}
+.item2_1
+{
+    width: 50%;
+    /* border: solid red; */
+}
+
+
+.item2_2
+{
+    width: 50%;
+    /* border: solid rgb(0, 8, 255); */
+}
+
+.items h1
+{
+   margin-left: 30%;
+   margin-top: 7%;
+   margin-bottom: 30px;
+    border-bottom: 3px solid green; /* Adds a green underline */
+    display: inline-block;
+    white-space:nowrap;
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+.items h4{
+    margin-left: 20%; 
+    margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 2px dotted rgb(84, 86, 84); /* Adds a green underline */
+    display: inline-block;
+}
+
+.price{
+    padding-left: 330%;
+}
+/* Galary */
+.galary
+{
+    background-image:url("Assert/bg2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 290px;
+    /* filter: blur(0.1px) ; */
+}
+.galary h1{
+    border-bottom: 4px solid greenyellow; /* Adds a green underline */
+    display: inline-block;
+    margin-left: 43%;
+    margin-top: 8%;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+    /* text-shadow: 0 0 10px rgba(0, 255, 0, 0.9); */
+    text-shadow: 5px 5px 10px rgba(0, 255, 0, 0.9);
+    
+}
+/* galary image button */
+.image-button
+{
+    display: flex;            
+    justify-content: center;   
+    gap: 15px;                
+    margin: 50px;
+   
+}
+.image-button button
+{
+    font-size: 20px;
+    height: 40px;
+    width: 140px;
+    background-color: #4CAF50;
+    color: white;            
+    border: none;              
+    border-radius: 10px;       
+    cursor: pointer;           
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.image-button button:hover {
+    background-color:greenyellow;
+    color: black;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.imgs_container {
+   
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left; 
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    width: 30%;                 /* Set each container to 30% for 3-column layout */
+         /* Optional: Limit the max width */
+    position: relative;
+    border-radius: 10px;
+    height: 250px;
+    /* border: solid blue; */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centered-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.hidden {
+    display: none; /* Hide elements with this class */
+  }
 
 /* mobile device */
 @media (max-width: 1050px)
@@ -355,18 +524,51 @@ header .hamburger {
     font-weight: 500;
 }
 .ab p{
-    margin-left: 20%; 
+    margin-left: 10%; 
     margin-top: 2%;
     font-size: 23px;
     font-weight: 500;
-    
+}
 
+
+ 
+ /* menu card */
+ .item1,.item2{
+     flex-direction: column;
+ }
+ .item1_1,.item1_2,.item2_1,.item2_2{
+     width: 100%;
+ }
+ .items h1
+ {
+     margin-left: 13%;
+ }
+ .items h4
+ {
+     display: block;
+     margin-left: 13%;
+ }
+ .price
+ {
+ 
+     padding-left: 60%;
+ }
+ .galary h1
+{
+    margin-left: 150px;
+    margin-top: 25%;
+}
+/* galary photos */
+.image-container {
+    width: 45%;  /* Two items per row on tablets */
+     
+  
 }
 
 }
 @media (max-width: 400px) {
     body {
-        border: 2px solid green; /* Optional: Helps to visually confirm small-screen mode */
+        border: 5px solid green; /* Optional: Helps to visually confirm small-screen mode */
     }
 
     header h1 {
@@ -377,14 +579,15 @@ header .hamburger {
     header nav a {
         font-size: 13px;
         font-weight: 500;
-        padding: 4px;
+        padding: 3px;
     }
 
-    header nav {
-        width: 60%; /* Adjusts width of the nav menu to be more compact */
+    header nav:nth-child {
+        width: 30%; /* Adjusts width of the nav menu to be more compact */
         top: 45px;
-        padding: 8px;
+        padding: 4px;
     }
+    
 
     .title {
         top: 50%;
@@ -404,7 +607,8 @@ header .hamburger {
     }
 
     header .hamburger {
-        font-size: 25px;
+        font-size: 20px;
+
     }
     /* about --------------------------------------*/
     .About
@@ -428,28 +632,63 @@ header .hamburger {
     /* border: red solid; */
   
 }
-
 .p2
 {
     width: 100%;
     height: auto;
-    /* border: yellow solid;  */
-  
+    /* border: yellow solid;  */  
 }
 .p2 h1{  
   font-size: 30px;
 }
-
-
-
 .ab h1{
    font-size: 35px;
     
     margin-left: 35%; 
 }
 .ab p{
-    margin-left: 2.5%; 
-    font-size: 22px;
+    margin-left: 3%; 
+    font-size: 20px;
+}
+/* menu card */
+.item1,.item2{
+    flex-direction: column;
+}
+.item1_1,.item1_2,.item2_1,.item2_2{
+    width: 100%;
+}
+.items h1
+{
+    margin-left: 13%;
+}
+.items h4
+{
+    display: block;
+    margin-left: 13%;
+}
+.price
+{
+
+    padding-left: 60%;
+}
+/* galary section */
+.galary h1
+{
+    margin-left: 100px;
+    margin-top: 25%;
+}
+.image-button
+{
+    justify-content: left;
+    gap: 6px;                
+    margin: 20px;
+   
+}
+
+/* galary photo */
+.image-container {
+    width: 80%;
+    margin-left: 20px;
 }
 
 }
