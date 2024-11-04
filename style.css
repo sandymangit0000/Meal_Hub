@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
@@ -96,7 +92,7 @@ header .hamburger {
 .title{
     font-family: "Dancing Script", cursive;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     font-size: 140px;
     font-weight: 800;
@@ -108,9 +104,9 @@ header .hamburger {
 .tag{
     position: absolute;
     /* border: solid; */
-    top: 70%;
+    top: 65%;
     left: 50%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: translate(-50%,-50%);
@@ -167,6 +163,7 @@ header .hamburger {
     padding-top: 2%;
     margin-right: 5%;
     font-size: 18px;
+    text-align: justify;
 }
 
 .p2 h2{
@@ -345,29 +342,6 @@ header .hamburger {
     overflow: hidden;
 }
 
-/* .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.centered-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-weight: bold;
-    
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-    white-space: nowrap;
-} */
-/* 
-
-*/
-
 .image-container img{
     position: relative;
     display: inline-block;
@@ -434,7 +408,7 @@ width: 100%;
 gap: 50px;
 height: auto;
 margin-left:19%;
-margin-top: 20px;
+margin-top: 10px;
 }
 .chef_detail img{
     width: 100%;
@@ -469,7 +443,7 @@ margin-top: 20px;
 }
 .reservation h3{
     text-align: center;
-    padding-top: 6%;
+    padding-top: 5%;
     color: white;
     font-size: 40px;
     font-weight: 400    ;
@@ -477,7 +451,7 @@ margin-top: 20px;
 footer
 {
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: rgba(0, 0, 0, 0.827);
 display: flex;
 text-align: center;
@@ -493,35 +467,7 @@ footer h3{
     font-size: x-large;
 }
 /* mobile device */
-@media (max-width: 1050px)
-{
-    body{
-        border: 2px solid blue  ;
-    }   
-    header h1{
-        font-size:xxx-large;
-         /* bigger; */
-          }
-    header nav a{
-        font-size: 20px;
-    }
-    .title{
-        
-        top: 50%;
-        left: 45%;
-        font-size: 90px;
-        
-    
-    }
-    .tag{
-        top: 60%;
-        left: 50%;
-        font-size: 30px;
-        font-weight: 400;
-        
-    }
-    /* about --------------------------------------*/
-}
+
 @media (max-width: 768px)
 {
     body{
@@ -642,10 +588,11 @@ footer h3{
 }
 .ab{ 
     height: 200px;
+    padding-top: 28px;
 }
 .ab h1{
-   font-size: 35px;
-    font-weight: 500;
+   font-size: 30px;
+    font-weight: 400;
 }
 .ab p{
     margin-left: 10%; 
@@ -675,12 +622,14 @@ footer h3{
  .price
  {
  
-     padding-left: 190%;
+     padding-left: 200%;
+     
  }
  .galary h1
 {
-    margin-left: 150px;
-    margin-top: 25%;
+    margin-left: 40%;
+    margin-top: 15%;
+   
 }
 /* galary photos */
 .image-container {
@@ -713,14 +662,10 @@ gap: 0px
 .reservation h3{
    
     padding-top: 13%;
-   
-    font-size: 30px;
-     
+    font-size: 28px;
 }
 footer
 {
-   
-
 flex-direction: column;
 height: auto;
 gap: 20px;
@@ -728,7 +673,7 @@ padding-bottom: 50px;
 }
 
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
     body {
         border: 5px solid green; /* Optional: Helps to visually confirm small-screen mode */
     }
@@ -868,16 +813,12 @@ padding-bottom: 50px;
 }
 .reservation
 {
-   
     width: 100%;
     height: 20vh;
     background-color: greenyellow;
 }
 .reservation h3{
-   
-    padding-top: 15%;
-    font-size: 25px;
-     ;
+    padding-top: 13%;
+    font-size: 1.5rem;   
 }
-
 }
