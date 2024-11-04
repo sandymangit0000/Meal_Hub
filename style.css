@@ -470,14 +470,10 @@ footer h3{
 
 @media (max-width: 768px)
 {
-    body{
-        border: 2px solid red;
-    }
+    
     header h1{
         font-size: xxx-large;
         font-weight: 400 ;
-      
-       
     }
     header nav a{
         text-decoration: none;
