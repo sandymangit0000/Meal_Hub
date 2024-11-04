@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="home">
+    <div class="home" id="home">
     <header>
         <!-- <h1>Méal <spam style="font-size: 40px;">Hüb</spam></h1> -->
         <h1>Méal Hüb</h1>
         <nav id="navMenu">
-            <a href="#" class="avt" id="home-nav">Home</a>
-            <a href="#" id="home-nav">Menu</a>
-            <a href="#" id="home-nav">Galary</a>
-            <a href="#" id="home-nav">About</a>
-            <a href="#" id="home-nav">Contact</a>
+            <a href="#home" class="avt" id="home-nav">Home</a>
+            <a href="#about" id="home-nav">About</a>
+            <a href="#menu" id="home-nav">Menu</a>
+            <a href="#galary" id="home-nav">Galary</a>
+            
+            <a href="#contact" id="home-nav">Contact</a>
         </nav>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
     </header>
@@ -24,7 +25,7 @@
    <h4  class="tag">Fresh/Flavorful/Taste Unforgettable</h4>
 </div>
 
-<div class="About">
+<div class="About" id="about">
     <div class="p1">
 <img src="Assert/bg3.jpg">
 
@@ -38,7 +39,7 @@
       
     </div>
 </div>
-<div class="ab">
+<div class="ab" id="menu">
     <h1>Menu</h1>
     <p>Pick Your loved Dishes and Enjoy it.</p>
 </div>
@@ -108,7 +109,7 @@
     </div>
     </div>
 </div>
-<div class="galary">
+<div class="galary" id="galary">
   <h1>GALLERY</h1>
 </div>
 <div class="image-button">
@@ -184,7 +185,7 @@
    
   </div>
   </div>
-<div class="reservation">
+<div class="reservation" id="contact">
 <h3>Want to make a reservation? Call +91-123-654-3210</h3>
 </div>
 <footer>
