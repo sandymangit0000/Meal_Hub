@@ -345,7 +345,7 @@ header .hamburger {
     overflow: hidden;
 }
 
-.image-container img {
+/* .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -363,11 +363,135 @@ header .hamburger {
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
+} */
+/* 
+
+*/
+
+.image-container img{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.centered-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    text-align: center;
+    align-content: center;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .centered-text {
+    opacity: 1;
 }
 .hidden {
     display: none; /* Hide elements with this class */
   }
 
+  /* chef page */
+  .chef
+  {
+    width: 100%;
+    height:auto;
+    background-image: url("Assert/kit-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+   
+   overflow: hidden;
+   
+  }
+  .chefclr
+  {
+    color:greenyellow;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+  }
+.chef h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 10%;
+}
+.chef_detail
+{
+display: flex;
+width: 100%;
+gap: 50px;
+height: auto;
+margin-left:19%;
+margin-top: 20px;
+}
+.chef_detail img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    align-items: center;
+    object-fit: cover;
+}
+.chef_detail h1{
+    color:greenyellow;
+    font-size: 35px;
+    text-shadow: 5px 5px 10px rgba(33, 169, 33, 0.94);
+}
+.chef_detail h4{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    }
+
+.john, .michael, .gordan
+{
+    width: 17%;
+    height: 75vh;
+    margin: 10px;
+}
+.reservation
+{
+   
+    width: 100%;
+    height: 30vh;
+    background-color: greenyellow;
+}
+.reservation h3{
+    text-align: center;
+    padding-top: 6%;
+    color: white;
+    font-size: 40px;
+    font-weight: 400    ;
+}
+footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.827);
+display: flex;
+text-align: center;
+justify-content: center;
+gap:120px;
+color: white;
+padding-left: 18px;
+padding-top: 6%;
+
+}
+footer h3{
+    color: greenyellow;
+    font-size: x-large;
+}
 /* mobile device */
 @media (max-width: 1050px)
 {
@@ -545,13 +669,13 @@ header .hamburger {
  }
  .items h4
  {
-     display: block;
+     display:  inline-block;
      margin-left: 13%;
  }
  .price
  {
  
-     padding-left: 60%;
+     padding-left: 190%;
  }
  .galary h1
 {
@@ -561,8 +685,46 @@ header .hamburger {
 /* galary photos */
 .image-container {
     width: 45%;  /* Two items per row on tablets */
+}
+.centered-text {
+    font-size: 1em;
+}
+.image-container:hover .centered-text {
+    opacity: 1;
+}
+/* chef page */
+.chef_detail
+{
+
+flex-direction: column;
+}
+.chef{
+    padding-top: 30px;
+}
+.chef_detail
+{
+gap: 0px
+}
+.john, .michael, .gordan
+{
+    width: 60%;
+    height: 90vh;
+}
+.reservation h3{
+   
+    padding-top: 13%;
+   
+    font-size: 30px;
      
-  
+}
+footer
+{
+   
+
+flex-direction: column;
+height: auto;
+gap: 20px;
+padding-bottom: 50px;
 }
 
 }
@@ -648,7 +810,7 @@ header .hamburger {
 }
 .ab p{
     margin-left: 3%; 
-    font-size: 18px;
+    font-size: 20px;
 }
 /* menu card */
 .item1,.item2{
@@ -656,20 +818,23 @@ header .hamburger {
 }
 .item1_1,.item1_2,.item2_1,.item2_2{
     width: 100%;
+
 }
 .items h1
 {
+
     margin-left: 11%;
 }
 .items h4
 {
-    display: block;
+    display:inline-block;
     margin-left: 11%;
+    font-size:20px;
 }
 .price
 {
 
-    padding-left: 60%;
+    padding-left: 180%;
 }
 /* galary section */
 .galary h1
@@ -684,11 +849,35 @@ header .hamburger {
     margin: 20px;
    
 }
-
 /* galary photo */
 .image-container {
-    width: 80%;
-    margin-left: 20px;
+    width: 90%;
+    margin-left: 10px;
+}
+.chef h1{
+    font-size: 40px;
+}
+.chef_detail h4{
+    font-size: 20px;
+    }
+
+.john, .michael, .gordan
+{
+    width: 60%;
+    height: 50vh;
+}
+.reservation
+{
+   
+    width: 100%;
+    height: 20vh;
+    background-color: greenyellow;
+}
+.reservation h3{
+   
+    padding-top: 15%;
+    font-size: 25px;
+     ;
 }
 
 }
