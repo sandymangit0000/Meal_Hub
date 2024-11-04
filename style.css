@@ -12,7 +12,7 @@
 {
     width: 100%;
     height: 100vh;
-    border: solid;
+/*     border: solid; */
     position: relative;
     background-image: url('Assert/bg4.jpg');
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ header .hamburger {
 .About
 {  width: 100%;
     height: 100vh;
-    border: solid;
+/*     border: solid; */
     display: flex;
 }
 .p1
@@ -203,7 +203,7 @@ header .hamburger {
 /* menu list */
 .items{
     width: 100%;
-    border: solid;
+/*     border: solid; */
     height: auto;
 }
 .item1
@@ -385,7 +385,6 @@ header .hamburger {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 30px;
-   
    overflow: hidden;
    
   }
@@ -559,7 +558,6 @@ footer h3{
    
    padding-left: 9%;
    padding-top: 2%;
-   
    font-weight: 500;
 
 }
